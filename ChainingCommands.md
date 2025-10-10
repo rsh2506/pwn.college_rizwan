@@ -101,3 +101,20 @@ pwn.college{QceAAogf6SYPWdbGrBaJ8F8O6Xo.QX4ETO0wiM5AzNzEzW}
 
 ### New Learnings
 I can now use piping to redirect outputs of a script to another command.
+
+## Executable shell scripts
+
+Make a shellscript that will invoke /challenge/solve, make it executable, and run it without explicitly invoking bash
+
+### Solve
+**Flag:** pwn.college{033y_OrJtGmEBTBZ3dDn1PWBnnQ.QX0cjM1wiM5AzNzEzW}
+```bash
+echo "/challenge/solve" > flag.sh
+chmod +x flag.sh
+./flag.sh
+Congratulations on your shell script execution! Your flag:
+pwn.college{033y_OrJtGmEBTBZ3dDn1PWBnnQ.QX0cjM1wiM5AzNzEzW}
+```
+
+### New Learnings
+I can now run shell scripts as executables without the need of `bash`.
