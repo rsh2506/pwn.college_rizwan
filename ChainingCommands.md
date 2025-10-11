@@ -118,3 +118,24 @@ pwn.college{033y_OrJtGmEBTBZ3dDn1PWBnnQ.QX0cjM1wiM5AzNzEzW}
 
 ### New Learnings
 I can now run shell scripts as executables without the need of `bash`.
+
+## Understanding Shebangs
+
+For this challenge, create a script at /home/hacker/solve.sh that has a proper shebang and outputs "hack the planet". Remember to make it executable, then run /challenge/run to verify your script works correctly!
+
+### Solve
+**Flag:** pwn.college{sQKvZerD1PVGV97qUBA2SuQLf_5.0VOzMDOxwiM5AzNzEzW}
+
+```bash
+cat > /home/hacker/solve.sh <<'EOF'
+> #!/bin/bash
+> echo "hack the planet"
+> EOF
+chmod +x /home/hacker/solve.sh
+/challenge/run
+Testing your script...
+Perfect! Your flag:
+Flag: pwn.college{sQKvZerD1PVGV97qUBA2SuQLf_5.0VOzMDOxwiM5AzNzEzW}
+```
+
+### New learnings
